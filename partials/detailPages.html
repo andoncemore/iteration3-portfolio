@@ -1,0 +1,34 @@
+<div class="headerImage" du-parallax y="background" ng-style="{ 'background-image': headerImage }">
+</div>
+<div class="articleContent">
+	<div class="contentWrapper">
+		<h1>{{pageContent.title}}</h1>
+		<h3> 
+			A {{pageContent.time}} Project  
+			<div ng-repeat="t in range"><i class="fa fa-user"></i></div>
+		</h3>
+		<h4>{{pageContent.introduction}}</h4>
+		<div ng-include="pageContent.partials">
+		</div>	
+	</div>
+
+	<div class="readMore">
+		<p>More Projects</p>
+		<div class="imageWrapper">
+			<div class="article"> 
+				<a href="#/portfolio/{{nextArticle1.route}}"class="imageContainer"><img ng-src="{{nextArticle1.squareThumb}}"><figcaption ng-class="{read: article1read}"><span><i class="fa fa-check-circle fa-2x"></i><br>Visited</span></figcaption></a>
+				
+				<p class="text">{{nextArticle1.title}}</p>
+			</div>
+			<div class="article">
+				<a href="#/portfolio/{{nextArticle2.route}}" class="imageContainer"> <img ng-src="{{nextArticle2.squareThumb}}"><figcaption ng-class="{read: article2read}"><span><i class="fa fa-check-circle fa-2x"></i><br>Visited</span></figcaption></a>
+				<p class="text">{{nextArticle2.title}}</p>
+			</div>	
+		</div>	
+	</div>	
+	<div class="byadit">
+		Designed  and  Built  by  Adit  Dhanushkodi  &copy;2014
+	</div>	
+</div>
+	
+

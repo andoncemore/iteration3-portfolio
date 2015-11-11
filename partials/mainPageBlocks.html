@@ -1,0 +1,70 @@
+<div class="searchTags" >
+	<a ng-repeat="t in searchTags" ng-class="{selected: isActive(t.route)}" href="#/home/{{t.route}}">{{t.tagName}}</a>
+</div>
+<div class="projects">
+
+	<div class="block">
+		<div class="image">
+			<img src="images/onshape_thumb.png">
+			<a href="images/onshape.pdf">
+				<figcaption>
+					<p>Read More</p>
+				</figcaption>
+			</a>
+		</div>
+		<h2>Designing a new CAD Experience</h2>
+		<p>A UI/UX Project to create strategies to handle UI Complexity with the increasing scale of a web based CAD software.</p>
+		<span></span>
+	</div>	
+	<div class='block' ng-repeat="p in boxContent">
+		<div class="image">
+			<img ng-src='{{p.thumbnail}}'>
+			<a href="#/portfolio/{{p.route}}">
+				<figcaption>
+					<p>Read More</p>
+				</figcaption>	
+			</a>
+		</div>	
+		<h2>{{p.title}}</h2>
+		<p>{{p.description}}</p>
+		<span> </span>
+	</div>	
+	<div class="block">
+		<div class="image">
+			<img src="images/onshape_thumb.png">
+			<a href="#/blog">
+				<figcaption>
+					<p>Read More</p>
+				</figcaption>
+			</a>
+		</div>
+		<h2>Other projects</h2>
+		<p>Some other stuff I've done.</p>
+		<span></span>
+	</div>	
+			
+</div>	
+
+
+<div class="aboutme">
+
+	<i class="chev fa fa-chevron-down fa-2x"></i>
+	<div class="myImage" id="aboutme"> 
+	</div>	
+	<p> 
+		<span>About Me</span> My Name is Adit Dhanushkodi and I'm currently a senior at 
+		<a class="link" href="https://www.olin.edu"> Olin College of Engineering</a> 
+		where I am getting a degree in Mechanical Engineering with a focus in Interaction Design. I love building things, and am passionate about designing things for and with people, whether that is physical or virtual. I've done a lot of work thinking about the design of physical spaces, how people interact with their physical surroundings, and how spaces can both represent and inform cultures. I've worked on projects exploring interaction design on multiple scales and in various mediums. Check out some of my
+		<a class="link" href"#home">recent work.</a> 
+
+
+	</p>
+	<div class="contactBar">
+		<a href="https://www.linkedin.com/pub/adit-dhanushkodi/61/7a7/3bb/"><i class="fa fa-linkedin fa-2x"></i></a>
+		<a href="mailto:adit.dhanushkodi@students.olin.edu"><i class="fa fa-envelope fa-2x"></i></a>
+		<a href="https://www.dropbox.com/s/dh1bz331txvwufn/Resume_Oct_AditDhanushkodi.pdf?dl=0"><i class="fa fa-file fa-2x"></i></a>
+	</div>		
+
+</div>	
+	
+	
